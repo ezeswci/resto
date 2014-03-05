@@ -13,12 +13,13 @@ function crearSecion(){
 	if(usuario==null){
 		// Si no se encunetra secion la crea
 		//alert("entro al log in");
-		if(window.location.pathname!='/restoapp/app/index.html'){
-			window.location='index.html';
+		if(window.location.pathname!='/restoapp/cel/index.html'){
+			//window.location='index.html';
+			//alert("El dir: "+window.location.pathname);
 		}
 	}else{
-		if(window.location.pathname=='/restoapp/app/index.html'){
-			window.location='inicio.html';
+		if(window.location.pathname=='/restoapp/cel/index.html'){
+			//window.location='inicio.html';
 		}
 	}
 }
