@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+	width:100%;
+	max-width: 900px;
+	float: left;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.centrar900px {
+	width:100%;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.main .header {
+	float: left;
+	width: 100%;
+	background-color: #E42313;
+	color: #FFF;
+	font-size: 16px;
+	-webkit-box-shadow: inset 0px -3px 21px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px -3px 21px -3px rgba(0,0,0,0.75);
+box-shadow: inset 0px -3px 21px -3px rgba(0,0,0,0.75);
+}
+.header .botones_header {
+	width: 300px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.header .botones_header .boton {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	-webkit-transition:0.5s;  /* Chrome y Safari */
+  	-o-transition:0.5s;  /* Opera */
+  	-moz-transition:0.5s;  /* Mozilla Firefox */
+  	-ms-transition:0.5s;   /* Internet Explorer */
+  	transition:0.5s;  /* W3C */
+	color: #FFFFFF;
+}
+
+.header .botones_header .boton:hover {
+	cursor: pointer;
+	color: #FFF;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	margin-left: 5px;
+	background-color: #900;
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+}
+.header .botones_header .precio {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	color: #FFFFFF;
+	font-size:12px;
+}
+.main .cuerpo {
+	float: left;
+	width: 96%;
+	padding: 2%;
+}
+.pedidos {
+	width: 100%;
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.pedidos .datos {
+	float: left;
+	width:35%;
+}
+.pedidos .input_style {
+	float: left;
+	width:60%;
+}
+.pedidos .datos_c {
+	float: left;
+	width:15%;
+}
+.pedidos .input_style_c {
+	float: left;
+	width:30%;
+}
+.comida {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+.comida .precio {
+	float: right;
+	width: 85px;
+	text-align: left;
+	margin-right: 10px;
+}
+.comida .agregar {
+	float: right;
+	width: 150px;
+	text-align: center;
+	padding: 2px;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #444;
+	font-size: 12px;
+	cursor:pointer;
+}
+.subcategoria {
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	color: #444;
+	font-weight: bold;
+	width: 100%;
+}
+
+.comida .nombre {
+	float: left;
+}
+.comida .float_rigth {
+	float: right;
+	height: 20px;
+}
+
+#menu .titulo_menu {
+	font-size: 18px;
+	width: 100%;
+	color: #E42313;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #E42313;
+}
+.comida.total {
+	font-weight: bold;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #444;
+	padding-top: 5px;
+	margin-top: 20px;
+}
+.comida .nombre .ingredientes {
+	font-size: 12px;
+}
+#bg_img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	color:#FFFFFF;
+	visibility:hidden;
+	-webkit-transition:0.3s;  /* Chrome y Safari */
+  	-o-transition:0.3s;  /* Opera */
+  	-moz-transition:0.3s;  /* Mozilla Firefox */
+  	-ms-transition:0.3s;   /* Internet Explorer */
+  	transition:0.3s;  /* W3C */
+	opacity:1;
+}
+#bg_formulario {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	color:#FFFFFF;
+}
+#bg_fondo_negro_img {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	opacity: 0.7;
+	z-index: 5;
+	-webkit-transition:0.3s;  /* Chrome y Safari */
+  	-o-transition:0.3s;  /* Opera */
+  	-moz-transition:0.3s;  /* Mozilla Firefox */
+  	-ms-transition:0.3s;   /* Internet Explorer */
+  	transition:0.3s;  /* W3C */
+	visibility:hidden;
+}
+#bg_fondo_negro {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	opacity: 0.7;
+	z-index: 5;
+}
+.log_in{
+	width: 100%;
+	max-width: 500px;
+	min-height:150px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F00;
+	border: 4px solid #FFF;
+	font-weight: bold;
+	text-transform: capitalize;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.img_logo{
+	width:95%;
+	max-width:263px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.img_ppal{
+	width:95%;
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#table_f{
+	display: table;
+	height: 90%;
+	margin: auto;
+	width: 100%;
+}
+#cell_f{
+	display: table-cell;
+	vertical-align: middle;
+}
+@media only screen and ( max-width: 480px) { 
+.body{
+	font-size: 10px;
+}
+.comida .agregar {
+	width: 80px;
+	font-size: 10px;
+}
+#menu .titulo_menu {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.comida.total {
+	font-weight: bold;
+	margin-top: 10px;
+}
+.comida .nombre .ingredientes {
+	font-size: 10px;
+}
+.comida.total {
+	font-weight: bold;
+	margin-top: 10px;
+}
+.comida .nombre {
+	font-size: 11px;
+}
+.comida .precio {
+	font-size: 11px;
+}
+
+}
